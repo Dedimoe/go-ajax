@@ -9,9 +9,9 @@ Sample golang with ajax call
 <br>
 Init:<br>
 ```go mod tidy```
-<br>
-Compile:
+<br><br>
+Compile:<br>
 ```go build -o ajax main.go```
-<br>
-Running:
+<br><br>
+Running:<br>
 ```./ajax```
