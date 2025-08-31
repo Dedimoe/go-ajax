@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" class="n" placeholder="Enter your name">
+    <button id="send">Send</button>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#send').click(function() {
+                var name = $(".n").val();
+                $.post("/ajax", { name: name }, function(data) {
+                    $("#result").html(data);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
