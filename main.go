@@ -9,6 +9,10 @@ import (
     "path"
 )
 
+type Data struct {
+   Name string
+}
+
 // Default Request Handler
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
     data := Data{"World!"}
