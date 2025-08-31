@@ -5,3 +5,12 @@ Sample golang with ajax call
 <br>
 <br>
 <img src="./sreenshot.png">ScreenShot</img>
+<br>
+Init:<br>
+```go mod tidy```
+<br>
+Compile:
+```go build -o ajax main.go```
+<br>
+Running:
+```./ajax```
